@@ -1,0 +1,86 @@
+body {
+  background: #abc7ca;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+svg {
+  margin: 0 auto;
+  left: 50%;
+  top: 0;
+  height: auto;
+  width: 100%;
+}
+
+.hills__back {
+  fill: #7da8ae;
+}
+.hills__front {
+  fill: #92b7bc;
+}
+
+.body {
+  fill: #ffffff;
+}
+
+.leg--back .leg__fur {
+  fill: #eee;
+}
+.leg--back .leg__hoof {
+  fill: #ccc;
+}
+.leg--front .leg__fur {
+  fill: #ffffff;
+}
+.leg--front .leg__hoof {
+  fill: #ddd;
+}
+
+.ear--right .ear__back {
+  fill: #eee;
+}
+.ear--right .ear__front {
+  fill: #ffdcdc;
+}
+.ear--left .ear__back {
+  fill: #ffffff;
+}
+.ear--left .ear__front {
+  fill: #ffe4e4;
+}
+
+.saddle__tassles {
+  stroke: #58595b;
+}
+.saddle__back {
+  fill: #f7a387;
+}
+.saddle__front {
+  fill: #f0e86b;
+}
+.saddle__dots {
+  fill: #58595b;
+}
+
+.face__back {
+  fill: #eee;
+}
+.face__eye {
+  stroke: #58595b;
+}
+.face__mouth {
+  stroke: #58595b;
+}
+.face__nose {
+  stroke: #58595b;
+}
+.face__cheeks {
+  fill: #f2c2c2;
+}
