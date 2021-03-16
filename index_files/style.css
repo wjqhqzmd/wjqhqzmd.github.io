@@ -66,13 +66,13 @@ body {
 .login-box form a {
   position: relative;
   display: inline-block;
-  padding: 20px 90px;
-  color: #03e9f4;
+  padding: 10px 10px;
+  color: #05e9f6;
   font-size: 20px;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
-  transition: .5s;
+  transition: 1s;
   margin-top: 40px;
   letter-spacing: 0px
 }
