@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			彩票随机数的生成
+		</title>
+		<link rel="stylesheet" href="./IDPass_files/weui.css" />
+	</head>
+	<body>
+		<!-- 设置样式 -->
+		<style>
+			body { background-color: #C7EDCC; }
+		</style>
+		<div class="weui-cell weui-cell_active" id="js_cell">
+			<div class="weui-cell__hd">
+				<label class="weui-label">
+					随机数
+				</label>
+			</div>
+			<div class="weui-cell__bd weui-flex">
+				<input id="text" class="weui-input" autofocus="" type="text">
+			</div>
+		</div>
+		<div class="weui-cell__bd weui-flex">
+			<a href="javascript:" class="weui-btn weui-btn_primary" id="btnGo">
+				开始
+			</a>
+		</div>
+		<div class="weui-cell__bd weui-flex">
+			<a href="javascript:" class="weui-btn weui-btn_warn" id="btnStop">
+				结束
+			</a>
+		</div>
+		</div>
+		<script type="text/javascript">
+			//获取节点
+			var btnGo = document.getElementById("btnGo");
+			var btnStop = document.getElementById("btnStop");
+			var text = document.getElementById("text");
+			//定义生成最小到最大值的随机函数
+			function rand(min, max) {
+				return parseInt(Math.random() * (max - min + 1) + min);
+			}
+
+			function start(min, max, length) {
+				//定义空数组
+				var arr = [];
+
+				while (arr.length < length) {
+					//生成一个随机数prem
+					var prem = rand(min, max);
+					//判断生成的随机数prem是否在数组arr里,果然不在，就将这个随机数插入到数组里，如果在，执行下一次循环
+					if (arr.indexOf(prem) == -1) {
+
+						arr.push(prem);
+					}
+				}
+				//返回数组arr
+				return arr;
+			}
+
+			var timer = 0;
+			//单击开始按钮生成随机数组
+			btnGo.onclick = function() {
+				//清除
+				clearInterval(timer);
+				timer = setInterval(function() {
+					text.value = start(1, 35, 7);
+				},
+				50)
+			}
+			//单击停止按钮获取一组随机数
+			btnStop.onclick = function() {
+				clearInterval(timer);
+			}
+		</script>
+	</body>
+
+</html>

@@ -1,139 +1,158 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>菜单</title>
-
-<link rel="stylesheet" href="./index_files/css/mdui.css" />
-<link rel="stylesheet" href="./index_files/css/app.css" />
-<link rel="stylesheet" href="./pages/IDPass_files/weui.min.css" />
-<link rel="stylesheet" href="./pages/IDPass_files/weui.css" />
-</head>
-<body>
-<style>
-body {
-    background-color: #C7EDCC;
-}
-</style>
-	<div class="weui_opr_area">
-    	   <p class="weui_btn_area">
-      	 <a href="javascript:WeixinJSBridge.call('closeWindow');" class="weui_btn weui_btn_plain_primary">
-			<i class="mdui-list-item-icon mdui-icon material-icons">
-			&#xe6d1;
-				</i>
-	</a>
-    	  </p>
-  	</div>
-			<ul class="mdui-list app-slide-menu app-collapse-menu" mdui-collapse="{accordion: true}">
-			   <li class="mdui-list-item mdui-ripple app-list-home ">
-				   <a href="https://github.com/wjqhqzmd" class="app-list-item-link mdui-text-left ">
-					   <div class="mdui-list-item-content">
-							<i class="mdui-list-item-icon mdui-icon material-icons">
-						   &#xe73d;
-						   </i>首页
-					   </div>
-				   </a>
-			   </li>
-			   <li class="mdui-list-item mdui-ripple app-list-home ">
-				   <a href="https://www.baidu.com" class="app-list-item-link mdui-text-left ">
-					   <div class="mdui-list-item-content">
-							<i class="mdui-list-item-icon mdui-icon material-icons">
-						   &#xe966;
-						   </i>百度
-					   </div>
-				   </a>
-			   </li>
-				<li class="mdui-collapse-item  app-hide-list  app-collapse-list">
-					<div class="mdui-collapse-item-header mdui-list-item mdui-ripple  mdui-p-x-0">
-						<div class="menu-click mdui-list-item-content mdui-text-left" onClick="">
-							通行导航
-							<i class="mdui-collapse-item-arrow mdui-icon material-icons mdui-float-right">
-								&#xe916;
-							</i>
-						</div>
-					</div>
-					<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
-						<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
-							<a href="./pages/IDPass_qiao.html" class="app-list-item-link mdui-text-left">
-								清
-							</a>
-						</li>
-						<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
-							<a href="./pages/IDPass_lin.html" class="app-list-item-link mdui-text-left">
-								邦
-							</a>
-						</li>
-						<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
-							<a href="./pages/IDPass_zhu.html" class="app-list-item-link mdui-text-left">
-								戒
-							</a>
-						</li>
-						<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
-							<a href="./pages/IDPass_mao.html" class="app-list-item-link mdui-text-left">
-								茂
-							</a>
-						</li>
-						<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
-							<a href="./pages/IDPass_tie.html" class="app-list-item-link mdui-text-left">
-								铁
-							</a>
-						</li>
-					</ul>
-				</li>
-				<li class="mdui-collapse-item  app-hide-list  app-collapse-list">
-					<div class="mdui-collapse-item-header mdui-list-item mdui-ripple  mdui-p-x-0">
-						<div class="menu-click mdui-list-item-content mdui-text-left" onClick="">
-							游戏
-							<i class="mdui-collapse-item-arrow mdui-icon material-icons mdui-float-right">
-								&#xe916;
-							</i>
-						</div>
-					</div>
-					<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
-						<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
-							<a href="./games/lizi.html" class="app-list-item-link mdui-text-left">
-								粒子特效
-							</a>
-						</li>
-						<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
-							<a href="./games/tomato/index.html" class="app-list-item-link mdui-text-left">
-								土豆
-							</a>
-						</li>
-						<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
-							<a href="./games/3D_Globe/index.html" class="app-list-item-link mdui-text-left">
-								3D Globe
-							</a>
-						</li>
-					</ul>
-				</li>
-				<li class="mdui-collapse-item  app-hide-list  app-collapse-list">
-					<div class="mdui-collapse-item-header mdui-list-item mdui-ripple  mdui-p-x-0">
-						<div class="menu-click mdui-list-item-content mdui-text-left" onClick="">
-							特效
-							<i class="mdui-collapse-item-arrow mdui-icon material-icons mdui-float-right">
-								&#xe916;
-							</i>
-						</div>
-					</div>
-					<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
-						<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
-							<a href="./games/yangtuo.html" class="app-list-item-link mdui-text-left">
-								羊驼
-							</a>
-						</li>
-						<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
-							<a href="./games/yinghua.html" class="app-list-item-link mdui-text-left">
-								樱花
-							</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<title>
+			菜单
+		</title>
+		<link rel="stylesheet" href="./index_files/css/mdui.css" />
+		<link rel="stylesheet" href="./index_files/css/app.css" />
+		<link rel="stylesheet" href="./pages/IDPass_files/weui.min.css" />
+		<link rel="stylesheet" href="./pages/IDPass_files/weui.css" />
+	</head>
+	<body>
+		<style>
+			body { background-color: #C7EDCC; }
+		</style>
+		<div class="weui_opr_area">
+			<p class="weui_btn_area">
+				<a href="javascript:WeixinJSBridge.call('closeWindow');" class="weui_btn weui_btn_plain_primary">
+					<i class="mdui-list-item-icon mdui-icon material-icons">
+						&#xe6d1;
+					</i>
+					点这里关闭
+				</a>
+			</p>
 		</div>
-	</div> 
-</header>
-<script src="./index_files/js/mdui.js"></script>
-</body>
+		<ul class="mdui-list app-slide-menu app-collapse-menu" mdui-collapse="{accordion: true}">
+			<li class="mdui-list-item mdui-ripple app-list-home ">
+				<a href="https://github.com/wjqhqzmd" class="app-list-item-link mdui-text-left ">
+					<div class="mdui-list-item-content">
+						<i class="mdui-list-item-icon mdui-icon material-icons">
+							&#xe73d;
+						</i>
+						首页
+					</div>
+				</a>
+			</li>
+			<li class="mdui-list-item mdui-ripple app-list-home ">
+				<a href="https://www.baidu.com" class="app-list-item-link mdui-text-left ">
+					<div class="mdui-list-item-content">
+						<i class="mdui-list-item-icon mdui-icon material-icons">
+							&#xe966;
+						</i>
+						百度
+					</div>
+				</a>
+			</li>
+			<li class="mdui-collapse-item  app-hide-list  app-collapse-list">
+				<div class="mdui-collapse-item-header mdui-list-item mdui-ripple  mdui-p-x-0">
+					<div class="menu-click mdui-list-item-content mdui-text-left" onClick="">
+						通行导航
+						<i class="mdui-collapse-item-arrow mdui-icon material-icons mdui-float-right">
+							&#xe916;
+						</i>
+					</div>
+				</div>
+				<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+					<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
+						<a href="./pages/IDPass_qiao.html" class="app-list-item-link mdui-text-left">
+							清
+						</a>
+					</li>
+					<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
+						<a href="./pages/IDPass_lin.html" class="app-list-item-link mdui-text-left">
+							邦
+						</a>
+					</li>
+					<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
+						<a href="./pages/IDPass_zhu.html" class="app-list-item-link mdui-text-left">
+							戒
+						</a>
+					</li>
+					<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
+						<a href="./pages/IDPass_mao.html" class="app-list-item-link mdui-text-left">
+							茂
+						</a>
+					</li>
+					<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
+						<a href="./pages/IDPass_tie.html" class="app-list-item-link mdui-text-left">
+							铁
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="mdui-collapse-item  app-hide-list  app-collapse-list">
+				<div class="mdui-collapse-item-header mdui-list-item mdui-ripple  mdui-p-x-0">
+					<div class="menu-click mdui-list-item-content mdui-text-left" onClick="">
+						游戏
+						<i class="mdui-collapse-item-arrow mdui-icon material-icons mdui-float-right">
+							&#xe916;
+						</i>
+					</div>
+				</div>
+				<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+					<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
+						<a href="./games/lizi.html" class="app-list-item-link mdui-text-left">
+							粒子特效
+						</a>
+					</li>
+					<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
+						<a href="./games/tomato/index.html" class="app-list-item-link mdui-text-left">
+							土豆
+						</a>
+					</li>
+					<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
+						<a href="./games/3D_Globe/index.html" class="app-list-item-link mdui-text-left">
+							3D Globe
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="mdui-collapse-item  app-hide-list  app-collapse-list">
+				<div class="mdui-collapse-item-header mdui-list-item mdui-ripple  mdui-p-x-0">
+					<div class="menu-click mdui-list-item-content mdui-text-left" onClick="">
+						特效
+						<i class="mdui-collapse-item-arrow mdui-icon material-icons mdui-float-right">
+							&#xe916;
+						</i>
+					</div>
+				</div>
+				<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+					<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
+						<a href="./games/yangtuo.html" class="app-list-item-link mdui-text-left">
+							羊驼
+						</a>
+					</li>
+					<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
+						<a href="./games/yinghua.html" class="app-list-item-link mdui-text-left">
+							樱花
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="mdui-collapse-item  app-hide-list  app-collapse-list">
+				<div class="mdui-collapse-item-header mdui-list-item mdui-ripple  mdui-p-x-0">
+					<div class="menu-click mdui-list-item-content mdui-text-left" onClick="">
+						工具
+						<i class="mdui-collapse-item-arrow mdui-icon material-icons mdui-float-right">
+							&#xe916;
+						</i>
+					</div>
+				</div>
+				<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+					<li class="mdui-list-item mdui-ripple app-sub-list  app-hide-list">
+						<a href="./pages/rand.html" class="app-list-item-link mdui-text-left">
+							随机数
+						</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		</header>
+		<script src="./index_files/js/mdui.js">
+		</script>
+	</body>
+
 </html>
