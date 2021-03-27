@@ -561,12 +561,11 @@ body[data-weui-theme='dark'] {
 }
 
 .weui-btn_primary:not(.weui-btn_disabled):visited {
-  color: #fff;
+  color: #ffffff;
 }
 
 .weui-btn_primary:not(.weui-btn_disabled):active {
-  background-color: #06ae56;
-  background-color: var(--weui-TAG-TEXT-GREEN);
+  background-color: #000;
 }
 
 .weui-btn_warn {

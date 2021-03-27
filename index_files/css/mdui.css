@@ -9671,7 +9671,7 @@ input.mdui-btn[type="submit"] {
   padding: 0 16px;
   text-decoration: none;
   cursor: pointer;
-  transition: background-color .3s cubic-bezier(.4, 0, .2, 1);
+  background-color: rgba(1, 1, 1, 1);
   text-align: center !important;
 
   -webkit-box-align: center;
@@ -9680,7 +9680,7 @@ input.mdui-btn[type="submit"] {
           align-items: center;
 }
 .mdui-list-item:hover {
-  background-color: rgba(0, 0, 0, .08);
+  background-color: rgba(0, 0, 0, 0);
 }
 .mdui-list-item:after {
   height: 48px;

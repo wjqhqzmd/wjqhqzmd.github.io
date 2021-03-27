@@ -55,10 +55,10 @@ header{
 .app-list-home{
     padding:0;
     margin:5px 0 10px;
-    background: #00b355;
+    background: #000;
 }
 .app-list-home:hover{
-    background: #00b355;
+    background: #000;
 }
 .app-list-home i{
     margin-top: -3px;
