@@ -9672,6 +9672,7 @@ input.mdui-btn[type="submit"] {
   text-decoration: none;
   cursor: pointer;
   transition: background-color .3s cubic-bezier(.4, 0, .2, 1);
+  text-align: center !important;
 
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -9718,6 +9719,7 @@ input.mdui-btn[type="submit"] {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+  text-align:center;
 
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;

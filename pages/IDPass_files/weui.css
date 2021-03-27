@@ -516,7 +516,6 @@ body[data-weui-theme='dark'] {
 .weui-btn {
   position: relative;
   display: block;
-  width: 184px;
   margin-left: auto;
   margin-right: auto;
   padding: 8px 24px;
@@ -558,8 +557,7 @@ body[data-weui-theme='dark'] {
 }
 
 .weui-btn_primary {
-  background-color: #07c160;
-  background-color: var(--weui-BRAND);
+  background-color: #000;
 }
 
 .weui-btn_primary:not(.weui-btn_disabled):visited {
