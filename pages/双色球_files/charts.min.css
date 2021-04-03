@@ -1,0 +1,1367 @@
+﻿@charset "utf-8";
+
+.search-box {
+    float: right;
+    margin-top: 8px;
+    height: 30px;
+    line-height: 30px;
+}
+
+    .search-box input {
+        float: left;
+        background: url(../images/chart-icon.png) no-repeat;
+    }
+
+    .search-box .search-days {
+        float: left;
+        width: 350px;
+        text-align: center;
+    }
+
+        .search-box .search-days input {
+            float: none;
+            background: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .search-box .search-days label {
+            cursor: pointer;
+            padding-left: 4px;
+        }
+
+    .search-box .tipmsg {
+        float: left;
+        width: 350px;
+    }
+
+    .search-box .search-link {
+        float: left;
+        width: 200px;
+    }
+
+        .search-box .search-link .selected {
+            color: #b92734;
+            font-weight: bold;
+        }
+
+        .search-box .search-link .unselected {
+        }
+
+        .search-box .search-link a {
+            display: inline-block;
+            margin-right: 18px;
+        }
+
+    .search-box .btn-search {
+        width: 56px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        background-position: -120px -31px;
+        color: #fff;
+        margin-left: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .search-box .input-term {
+        width: 92px;
+        height: 24px;
+        line-height: 24px;
+        padding: 3px 2px;
+        background-position: -17px 0;
+        text-align: center;
+    }
+
+.day .input-term {
+    width: 220px;
+    background: none;
+    border: 1px #de2013 solid;
+    border-radius: 2px;
+}
+
+.search-box .zs-search {
+    float: left;
+    padding-left: 15px;
+}
+
+    .search-box .zs-search span, .search-box .miss-search span {
+        float: left;
+        display: inline-block;
+        padding: 0 8px;
+    }
+
+.search-box .miss-search {
+    float: left;
+}
+
+    .search-box .miss-search .input-term {
+        width: 79px;
+        background-position: -116px 0;
+        text-align: left;
+        padding: 3px 0 3px 8px;
+    }
+
+    .search-box .miss-search .btn-search {
+        background-position: -203px 0;
+        margin-left: 0;
+    }
+
+.search-box .mSelectBox {
+    float: left;
+    width: 92px;
+    height: 30px;
+    background: url(../images/chart-icon.png) -181px -31px no-repeat;
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+}
+
+    .search-box .mSelectBox .mSelect {
+        display: block;
+        line-height: 30px;
+        text-indent: 12px;
+    }
+
+    .search-box .mSelectBox .mSelectList {
+        top: 30px;
+        left: 0;
+        position: absolute;
+        width: 90px;
+        height: 100px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        border: 1px solid #cb3a34;
+        background: #fafafa;
+        z-index: 100;
+        display: none;
+    }
+
+        .search-box .mSelectBox .mSelectList a {
+            display: block;
+            height: 22px;
+            text-align: center;
+            line-height: 22px;
+        }
+
+            .search-box .mSelectBox .mSelectList a:hover {
+                background: #de2013;
+                color: #fff;
+            }
+
+.ctl-box {
+    float: left;
+    width: 1198px;
+    height: 34px;
+    line-height: 34px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background: #f6f9ff;
+    text-align: center;
+    font-size: 14px;
+}
+
+    .ctl-box .ctl-item {
+        padding-right: 12px;
+    }
+
+    .ctl-box input, .ctl-box label {
+        margin-right: 3px;
+        vertical-align: middle;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .ctl-box .sharebar {
+        width: 165px;
+        height: 30px;
+        position: absolute;
+        top: 2px;
+        right: 25px;
+        display: none;
+    }
+
+    .ctl-box .sharebox {
+        float: right;
+        width: 56px;
+        position: relative;
+    }
+
+    .ctl-box .sharebar .buy, .ctl-box .sharebar .share {
+        float: left;
+        height: 30px;
+        background: url(../images/chart-icon.png) no-repeat;
+        text-align: center;
+        cursor: pointer;
+        color: #fff;
+        line-height: 30px;
+    }
+
+    .ctl-box .sharebar .buy {
+        width: 100px;
+        background-position: -17px -31px;
+    }
+
+    .ctl-box .sharebar .share {
+        width: 56px;
+        background-position: -17px -62px;
+    }
+
+    .ctl-box .sharebox .share-content {
+        position: absolute;
+        top: 37px;
+        right: -25px;
+        width: 260px;
+        background: #fff;
+        padding: 8px 10px;
+        border: 3px solid #d8d8d8;
+        border-radius: 4px;
+    }
+
+    .ctl-box .sharebox .share-icon {
+        display: block;
+        width: 0;
+        height: 0;
+        border-width: 0 10px 10px;
+        border-style: solid;
+        border-color: transparent transparent #d8d8d8;
+        position: absolute;
+        top: -10px;
+        right: 36px;
+        margin-left: -10px;
+    }
+
+        .ctl-box .sharebox .share-icon s {
+            display: block;
+            width: 0;
+            height: 0;
+            border-width: 0 6px 6px;
+            border-style: solid;
+            border-color: transparent transparent #fff;
+            position: absolute;
+            top: 6px;
+            left: -6px;
+        }
+
+.missTable {
+    width: 100%;
+    background: #fafafa;
+    border-collapse: collapse;
+}
+
+    .missTable th, .missTable td {
+        border: 1px solid #dfdfdf;
+        vertical-align: middle;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+    .missTable th {
+        background-color: #fedada;
+        font-weight: normal;
+        line-height: 15px;
+        padding: 5px;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        font-size: 12px;
+        font-style: normal;
+        font-family: 'Microsoft YaHei','宋体',tahoma;
+    }
+
+    .missTable td {
+        line-height: 26px;
+        font-family: "宋体";
+        height: 26px;
+        cursor: pointer;
+    }
+
+    .missTable th.blue {
+        color: #134381;
+        font-weight: bold;
+    }
+
+    .missTable .even td {
+        background-color: #fff;
+    }
+
+    .missTable .act td {
+        background-color: #fff5da;
+    }
+
+    .missTable .purple td {
+        color: #800080;
+    }
+
+    .missTable tr.hover td {
+        font-weight: 700;
+        background-color: #fff6e5;
+    }
+
+.tbtable {
+    width: 100%;
+    background: #fafafa;
+    border-collapse: collapse;
+}
+
+    .tbtable th, .tbtable td {
+        border: 1px solid #cdcaca;
+        vertical-align: middle;
+        white-space: nowrap;
+        text-align: center;
+        height: 30px;
+        font-family: "宋体";
+    }
+
+    .tbtable th {
+        background: #fedada;
+        font-weight: normal;
+        font-family: Arial;
+    }
+
+    .tbtable td {
+        line-height: 30px;
+    }
+
+    .tbtable .bg-yellow {
+        background: #fdf0f0;
+    }
+
+.trend .zstableBox {
+    width: 1198px;
+    border: 1px solid #cde0ff;
+    padding-bottom: 10px;
+    _padding-bottom: 20px;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+.zstable {
+    display: inline-block;
+    float: left;
+    width: 200px;
+    margin: 20px 48px;
+    _margin: 20px 40px;
+}
+
+    .zstable td {
+        border: 1px solid #dfdfdf;
+        vertical-align: middle;
+        white-space: nowrap;
+        text-align: center;
+        height: 32px;
+    }
+
+.chartTable {
+    background: #fafafa;
+    border-collapse: collapse;
+    width: 1200px;
+}
+
+    .chartTable .bg-box1 {
+        background: #b79939;
+        color: #fff;
+        width: 16px;
+        height: 15px;
+        margin: 0 auto;
+        line-height: 15px;
+        font-family: arial;
+    }
+
+    .chartTable .bg-box2 {
+        background: #7fb1bd;
+        color: #fff;
+        width: 16px;
+        height: 15px;
+        margin: 0 auto;
+        line-height: 15px;
+        font-family: arial;
+    }
+
+    .chartTable .presele .bg-box1 {
+        background: #b79939;
+        color: #fff;
+        width: 16px;
+        height: 15px;
+        margin: 0 auto;
+        line-height: 15px;
+        font-family: arial;
+    }
+
+    .chartTable .presele .hz_red {
+        color: #fff;
+        background: #c84c59;
+    }
+
+    .chartTable .presele .bg-box2 {
+        background: #7fb1bd;
+        color: #fff;
+        width: 16px;
+        height: 15px;
+        margin: 0 auto;
+        line-height: 15px;
+        font-family: arial;
+    }
+
+    .chartTable .presele .bg-box3 {
+        background: #186EA7;
+        color: #fff;
+        width: 16px;
+        height: 15px;
+        margin: 0 auto;
+        line-height: 15px;
+        font-family: arial;
+    }
+
+    .chartTable th, .chartTable td {
+        border: 1px solid #fff;
+        vertical-align: middle;
+        white-space: nowrap;
+        text-align: center;
+        height: 21px;
+        font-size: 12px;
+    }
+
+    .chartTable th {
+        background-color: #f0e5c6;
+        font-weight: normal;
+        font-family: Arial;
+    }
+
+    .chartTable td {
+        line-height: 28px;
+        font-family: "宋体";
+    }
+
+    .chartTable .sort_up, .chartTable .sort_down {
+        cursor: pointer;
+    }
+
+        .chartTable .sort_up strong, .chartTable .sort_down strong {
+            padding-right: 13px;
+            background: url(../images/chart-icon.png) 30px 1px no-repeat;
+            font-weight: bold;
+        }
+
+        .chartTable .sort_up strong {
+            background-position: 31px -1px;
+        }
+
+        .chartTable .sort_down strong {
+            background-position: 31px -18px;
+        }
+
+    .chartTable td.appears {
+        height: 70px;
+        font-size: 12px;
+        vertical-align: bottom;
+        line-height: 10px;
+    }
+
+.dataAnalysisBox {
+    float: right;
+    width: 235px;
+    text-align: right;
+    padding: 0 10px 0 0;
+}
+
+    .dataAnalysisBox strong {
+        float: left;
+        font-weight: bold;
+        text-indent: 15px;
+        color: #417dc3;
+    }
+
+    .dataAnalysisBox input, .dataAnalysisBox label {
+        cursor: pointer;
+    }
+
+.staticTable {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fafafa;
+}
+
+    .staticTable th, .staticTable td {
+        border: 1px solid #dfdfdf;
+        height: 26px;
+        font-family: "宋体";
+        text-align: center;
+    }
+
+    .staticTable th {
+        background-color: #fff6e5;
+        font-weight: normal;
+    }
+
+    .staticTable thead th {
+        font-weight: bold;
+    }
+
+    .staticTable thead td {
+        background-color: #fff6e5;
+    }
+
+    .staticTable .bg-yellow {
+        background-color: #fffcf5;
+    }
+
+    .staticTable td.appears {
+        height: 70px;
+        font-size: 12px;
+        vertical-align: bottom;
+        line-height: 10px;
+    }
+
+        .staticTable td.appears img {
+            vertical-align: bottom;
+        }
+
+.chartTable .circle, .chartTable .circle-red, .chartTable .circle-blue, .chartTable .ball-yred, .chartTable .ball-gblue, .chartTable .presele-ball, .chartTable .presele-red, .chartTable .presele-blue, .chartTable .presele-circle, .chartTable .ball-orange, .chartTable .ball-green, .chartTable .ball-purple, .chartTable .ball-gred, .chartTable td.ball-lightgreen, .chartTable .circle-yred, .chartTable .circle-yblue, .chartTable tr td.ball-yellow, .chartTable tr td.ball-pink {
+    background-image: url(../images/chartball.png);
+    background-repeat: no-repeat;
+    font-size: 12px;
+}
+
+.chartTable .miss-yred1 {
+    background-color: #f9f9f9;
+    color: #D2B0B0;
+}
+
+.chartTable .miss-yred2 {
+    background-color: #fcfcfc;
+    color: #D2B0B0;
+}
+
+.chartTable .miss-yred-c1 {
+    color: #28ab28;
+}
+
+.chartTable .miss-yred-c2 {
+    color: #595656;
+    background: white;
+}
+
+.chartTable .ball-yred {
+    background-color: #fffcf5;
+    background-position: center -136px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.chartTable .ball-gred {
+    background-position: center -136px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.chartTable .small {
+    font-size: 10px;
+}
+
+.chartTable .miss-gblue {
+    color: #B6BCCB;
+}
+
+.chartTable .ball-gblue {
+    background-position: center -164px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.chartTable .blue {
+    color: #186EA7;
+    font-weight: bold;
+}
+
+.chartTable .red {
+    color: #c84c59;
+    font-weight: bold;
+}
+
+.chartTable .red-b {
+    color: red;
+    font-weight: bold;
+}
+
+.chartTable .no-border-lr {
+    border-left: 0;
+    border-right: 0;
+}
+
+.chartTable .no-border-l {
+    border-left: 0;
+}
+
+.chartTable .no-border-r {
+    border-right: 0;
+}
+
+.chartTable .f12 {
+    font-size: 12px;
+}
+
+.chartTable a.blue {
+    cursor: pointer;
+}
+
+.chartTable .meihua, .chartTable .hongtao, .chartTable .fangpian, .chartTable .heitao, .chartTable .meihua-no, .chartTable .hongtao-no, .chartTable .fangpian-no, .chartTable .heitao-no, .staticTable .meihua, .staticTable .hongtao, .staticTable .heitao, .staticTable .fangpian {
+    background-image: url(../images/poker.png);
+    background-repeat: no-repeat;
+    font-weight: bold;
+    text-indent: 16px;
+}
+
+.chartTable .meihua, .staticTable .meihua {
+    background-position: left -65px;
+    color: #333;
+}
+
+.chartTable .fangpian, .staticTable .fangpian {
+    background-position: left -96px;
+    color: #cb3a34;
+}
+
+.chartTable .hongtao, .staticTable .hongtao {
+    background-position: left -36px;
+    color: #cb3a34;
+}
+
+.chartTable .heitao, .staticTable .heitao {
+    background-position: left -1px;
+    color: #333;
+}
+
+.chartTable .meihua-no {
+    background-position: left -65px;
+    color: #333;
+    text-indent: -99999px;
+}
+
+.chartTable .fangpian-no {
+    background-position: left -96px;
+    color: #cb3a34;
+    text-indent: -99999px;
+}
+
+.chartTable .hongtao-no {
+    background-position: left -36px;
+    color: #cb3a34;
+    text-indent: -99999px;
+}
+
+.chartTable .heitao-no {
+    background-position: left -1px;
+    color: #333;
+    text-indent: -99999px;
+}
+
+.chartTable td.ball-green {
+    background-position: center -192px;
+    color: #fff;
+}
+
+.chartTable tr td.ball-lightgreen {
+    background-position: center -276px;
+    color: #fff;
+}
+
+.chartTable tr td.ball-orange {
+    background-position: center -220px !important;
+    color: #fff;
+}
+
+.chartTable tr td.ball-purple {
+    background-position: center -248px !important;
+    color: #fff;
+}
+
+.chartTable tr td.ball-yellow {
+    background-position: center -472px !important;
+    color: #fff;
+    font-weight: bold;
+}
+
+.chartTable tr td.ball-pink {
+    background-position: center -388px !important;
+    color: #fff;
+    font-weight: bold;
+}
+
+.chartTable .miss-gray {
+    color: #999;
+}
+
+.chartTable .circle {
+    color: #525252;
+    background-position: center 4px;
+    font-weight: bold;
+}
+
+.chartTable .circle-red {
+    color: #cb3a34;
+    background-position: center -24px;
+    font-weight: bold;
+}
+
+.chartTable .circle-blue {
+    color: #1d71a9;
+    background-position: center -52px;
+    font-weight: bold;
+}
+
+.chartTable .circle-yred {
+    background-color: #fffcf5;
+    color: #525252;
+    background-position: center -24px;
+    font-weight: bold;
+}
+
+.chartTable .circle-yblue {
+    background-color: #fffcf5;
+    color: #1d71a9;
+    background-position: center -52px;
+    font-weight: bold;
+}
+
+.chartTable .triangle_bgyellow, .chartTable .round, .chartTable .block, .chartTable .start {
+    background: url(../images/jiou.png) no-repeat top left;
+}
+
+.chartTable .triangle_bgyellow {
+    background-position: center -4px;
+    background-color: #fffcf5;
+    width: 35px;
+    height: 28px;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+.chartTable .bg-yellow {
+    background-color: #fffcf5;
+}
+
+.chartTable .bg-blue {
+    background-color: #e8f1fa;
+}
+
+.chartTable .round {
+    background-position: center -39px;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+.chartTable .block {
+    background-position: center -74px;
+    text-indent: -999px;
+    background-color: #fffcf5;
+    overflow: hidden;
+}
+
+.chartTable .white {
+    background-color: #fff;
+}
+
+.chartTable .extent {
+    width: 32px;
+}
+
+.chartTable .start {
+    background-position: center -116px;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+.chartTable #chartData .square-ywhite, .zstable #chartData .square-ywhite {
+    background-color: #c84c59;
+    color: #ffffff;
+}
+
+.chartTable #chartData .square-bwhite, .zstable #chartData .square-bwhite {
+    background-color: #437ec0;
+    color: #ffffff;
+}
+
+.chartTable #chartData .square-bghite, .zstable #chartData .square-bghite {
+    background-color: #7fb1bd;
+    color: #ffffff;
+}
+
+.zstable .square-owhite {
+    background-color: #ecb536;
+    color: #ffffff;
+}
+
+.zstable .square-ywhite {
+    background-color: #c84c59;
+    color: #ffffff;
+}
+
+.zstable .square-bwhite {
+    background-color: #437ec0;
+    color: #ffffff;
+}
+
+.zstable .square-bghite {
+    background-color: #7fb1bd;
+    color: #ffffff;
+}
+
+.chartTable .ball-syred, .chartTable .ball-sgred, .chartTable .ball-syblue, .chartTable .ball-sgblue {
+    background: url(../images/chartball-small.png) no-repeat top left;
+    color: #fff;
+}
+
+.chartTable .ball-syred {
+    background-color: #fffcf5;
+    background-position: center 7px;
+    background-size: 14px;
+}
+
+.chartTable .ball-sgred {
+    background-position: center 7px;
+    background-size: 14px;
+}
+
+.chartTable .ball-syblue {
+    background-color: #fffcf5;
+    background-position: center -21px;
+    background-size: 14px;
+}
+
+.chartTable .ball-sgblue {
+    background-position: center -21px;
+    background-size: 14px;
+}
+
+.chartTable .row-status td, .chartTable .row-status .miss-yred, .chartTable .row-status .miss-gblue {
+    background-color: #E0EFF0;
+}
+
+.nomiss .chartTable .row-status .miss-yred, .nomiss .chartTable .row-status .miss-gblue, .nomiss .chartTable .row-status .miss-gray {
+    background-color: #E0EFF0;
+    color: #E0EFF0;
+}
+
+.chartTable .presele td {
+    background-color: #F0F0F0;
+    font-family: Arial;
+}
+
+.chartTable .presele .presele-title {
+    font-weight: bold;
+}
+
+    .chartTable .presele .presele-title strong, .chartTable .presele .presele-title span {
+        display: inline-block;
+        padding-left: 5px;
+        color: #186ea7;
+        font-weight: bold;
+    }
+
+    .chartTable .presele .presele-title span {
+        background-position: 39px -61px;
+    }
+
+.chartTable .presele .presele-ball {
+    background-position: center -80px;
+    color: #888;
+    cursor: pointer;
+}
+
+.chartTable .presele .presele-red {
+    background-position: center -500px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.chartTable .presele .presele-blue {
+    background-position: center -528px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.chartTable .presele .presele-circle {
+    background-position: center 4px;
+    cursor: pointer;
+}
+
+.chartTable .presele .presele-ball:hover {
+    background-position: center -108px;
+}
+
+.chartTable .presele .presele-square {
+    background-color: #F0F0F0;
+    color: #888;
+    cursor: pointer;
+}
+
+.chartTable .presele .presele-orange {
+    background-color: #ff8a2c;
+    color: #fff;
+    cursor: pointer;
+}
+
+.chartTable .presele .presele-bgred {
+    background-color: #c84c59;
+    color: #fff;
+    cursor: pointer;
+}
+
+.chartTable .presele .presele-bgblue {
+    background-color: #437ec0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.chartTable .presele .presele-bggreen {
+    background-color: #7fb1bd;
+    color: #fff;
+    cursor: pointer;
+}
+
+.chartTable .presele .presele-bgyellow {
+    background-color: #b79939;
+    color: #fff;
+    cursor: pointer;
+}
+
+.chartTable .presele .presele-square:hover {
+    background-color: #F0F0F0;
+}
+
+.nomiss .chartTable .miss-yred {
+    color: #f8f8f8;
+}
+
+.nomiss .chartTable .dz {
+    color: #faeeee;
+}
+
+.nomiss .chartTable .miss-gblue, .nomiss .chartTable .miss-gray {
+    color: #fafafa;
+}
+
+.chartTable tr td.sliceMiss-5 {
+    background-color: #99C;
+    color: #000 !important;
+}
+
+.chartTable tr td.sliceMiss-11 {
+    background-color: #99C;
+    color: #06f !important;
+}
+
+.chartTable tr td.sliceMiss-m {
+    background-color: #99C;
+    color: #cb3a34 !important;
+}
+
+.chartTable .row-status td.sliceMiss-5 {
+    background-color: #99C;
+    color: #000 !important;
+}
+
+.chartTable .row-status td.sliceMiss-11 {
+    background-color: #99C;
+    color: #06f !important;
+}
+
+.chartTable .row-status td.sliceMiss-m {
+    background-color: #99C;
+    color: #cb3a34 !important;
+}
+
+.chartTable .hiddens {
+    width: 30px;
+    height: 28px;
+    overflow: hidden;
+}
+
+.p5Width {
+    width: 1300px;
+}
+
+.p5Width1 {
+    width: 1298px;
+}
+
+.p5Width2 {
+    width: 1288px;
+}
+
+.qxcWidth {
+    width: 1552px;
+}
+
+.qxcWidth1 {
+    width: 1550px;
+}
+
+.qxcWidth2 {
+    width: 1540px;
+}
+
+#chartLine {
+    float: left;
+    width: 1200px;
+    clear: both;
+}
+
+.chartTable .chartball_red1, .chartTable .chartball_red2, .chartTable .chartball_blue, .chartTable .chartball_gray, .chartTable .chartball_green, .chartTable .chartblock_green, .chartTable .chartblock_red, .chartTable .chartblock_blue, .chartTable .chartblock_green1, .chartTable .chartblock_red1, .chartTable .chartblock_blue1 {
+    background-position: center center;
+    color: #fff;
+    background-repeat: no-repeat;
+    font-family: Arial;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.chartTable .chartball_red1 {
+    background-image: url(/static/images/red_ball_1.gif);
+}
+
+.chartTable .chartball_gray {
+    background-image: url(/static/images/gray_ball.gif);
+}
+
+.chartTable .chartball_red2 {
+    background-image: url(/static/images/red_ball_2.gif);
+    color: #ae0303;
+    letter-spacing: -1px;
+}
+
+.chartTable .chartball_blue {
+    background-image: url(/static/images/blue_ball.gif);
+    position: relative;
+}
+
+.chartTable .chartball_green {
+    background-image: url(/static/images/green_ball.gif);
+    position: relative;
+}
+
+.chartTable .chartblock_green {
+    background-image: url(/static/images/green_block.gif);
+    position: relative;
+}
+
+
+.chartTable .chartblock_red {
+    background-image: url(/static/images/red_block.gif);
+    position: relative;
+}
+
+.chartTable .chartblock_blue {
+    background-image: url(/static/images/blue_block.gif);
+    position: relative;
+}
+.chartTable .chartblock_red1 {
+    background-image: url(/static/images/block_red.png);
+    position: relative;
+}
+.chartTable .chartblock_green1 {
+    background-image: url(/static/images/block_green.png);
+    position: relative;
+}
+.chartTable .chartblock_blue1 {
+    background-image: url(/static/images/block_blue.png);
+    position: relative;
+}
+.td_zs_yl {
+    font-size: 6px;
+    font-family: tahoma;
+    width: 18px;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.td_yl {
+    color: #d9d9d9;
+    font-size: 6px;
+    font-family: tahoma;
+    width: 16px;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tdblock {
+    height: 1px;
+    background: #dbdbdb;
+    font-size: 0;
+}
+
+.chartTable .bg_z3_1 {
+    background: #7fb1bd;
+    color: #fff;
+    font-family: tahoma;
+    width: 27px;
+    height: 16px;
+    margin: 0 auto;
+    line-height: 16px;
+}
+
+.chartTable .bg_z3_2 {
+    background: #b79939;
+    color: #fff;
+    font-family: tahoma;
+    width: 27px;
+    height: 16px;
+    margin: 0 auto;
+    line-height: 16px;
+}
+
+.chartTable .bg_bz {
+    background: #000000;
+    color: #fff;
+    font-family: tahoma;
+    width: 27px;
+    height: 16px;
+    margin: 0 auto;
+    line-height: 16px;
+}
+
+.chartTable .bg_zx_1 {
+    background: #7fb1bd;
+    color: #fff;
+    width: 16px;
+    height: 15px;
+    margin: 0 auto;
+    line-height: 15px;
+    font-family: arial;
+}
+
+.chartTable .bg_zx_2 {
+    background: #b79939;
+    color: #fff;
+    width: 16px;
+    height: 15px;
+    margin: 0 auto;
+    line-height: 15px;
+    font-family: arial;
+}
+
+.chartTable .bg_b {
+    color: #bccee2;
+    background-color: #eaf0f7;
+}
+
+.chartTable .bg_p {
+    color: #e1adad;
+    background-color: #faeeee;
+}
+
+.chartTable .bg_sqb {
+    background: #b79939;
+    color: #fff;
+    font-family: tahoma;
+    height: 20px;
+    margin: 0 auto;
+    line-height: 20px;
+}
+
+.chartTable .bg_job {
+    background: #7fb1bd;
+    color: #fff;
+    font-family: tahoma;
+    height: 20px;
+    margin: 0 auto;
+    line-height: 20px;
+}
+
+.chartTable tr td.split01, .chartTable tr th.split01 {
+    width: 1px;
+    background: #dbdbdb;
+    font-size: 0;
+    border: 1px solid #dbdbdb;
+    border-width: 1px 0px 1px 0px;
+}
+
+.chartTable tr td.split02, .chartTable tr th.split02 {
+    width: 1px;
+    background: #dbdbdb;
+    font-size: 0;
+    border: 1px solid #dbdbdb;
+    border-width: 1px 0px 1px 0px;
+}
+
+.chartTable .wdh16 {
+    width: 16px;
+}
+
+.chartTable .wdh18 {
+    width: 18px;
+}
+
+.chartTable .wdh20 {
+    width: 20px;
+}
+
+.chartTable .wdh23 {
+    width: 23px;
+}
+
+.chartTable .wdh28 {
+    width: 28px;
+}
+
+.chartTable td {
+    text-align: center;
+    height: 24px;
+    overflow: hidden;
+}
+
+.chartTable .brl {
+    border-left: 1px solid #ddd;
+}
+
+.chartTable .brr {
+    border-right: 1px solid #ddd;
+}
+
+.chartTable .brt {
+    border-top: 1px solid #ddd;
+}
+
+.chartTable .brb {
+    border-bottom: 1px solid #ddd;
+}
+
+.chartTable .dz {
+    color: #eeadad;
+    background-color: #faeeee;
+}
+
+.chartTable .ch {
+    background-image: url(/static/images/ch_ball.gif);
+    color: #fff;
+}
+
+.chartTable .lh {
+    background-image: url(/static/images/lh_ball.gif);
+    color: #fff;
+}
+
+.chartTable .th {
+    background-image: url(/static/images/th_ball.gif);
+    color: #fff;
+}
+
+.ft9 {
+    font-size: 6px;
+    font-family: tahoma;
+    width: 16px;
+    -webkit-transform: scale(0.66);
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    color: #d9d9d9;
+}
+
+.chartTable .ball_hz {
+    color: #fff;
+    background: #c84c59;
+}
+
+.chartTable .ball_hw {
+    color: #fff;
+    background: #8dbcbd;
+}
+
+.chartTable .ft9 {
+    font-size: 9px;
+}
+
+.chartTable .ft10 {
+    font-size: 10px;
+}
+
+.chartTable .ft11 {
+    font-size: 11px;
+}
+
+.chartTable .ft12 {
+    font-size: 12px;
+}
+
+.chartTable .bg1 {
+    width: 35px;
+    height: 16px;
+    background: #8dbcbd;
+    line-height: 16px;
+    font-weight: bold;
+    color: #fff;
+    font-family: arial;
+    margin: 0 auto;
+}
+
+.chartTable .presele .bg1 {
+    width: 35px;
+    height: 16px;
+    background: #8dbcbd;
+    line-height: 16px;
+    font-weight: bold;
+    color: #fff;
+    font-family: arial;
+    margin: 0 auto;
+}
+
+.chartTable .bg2 {
+    width: 35px;
+    height: 16px;
+    background: #e0b26d;
+    line-height: 16px;
+    font-weight: bold;
+    color: #fff;
+    font-family: arial;
+    margin: 0 auto;
+}
+
+.chartTable .presele .bg2 {
+    width: 35px;
+    height: 16px;
+    background: #e0b26d;
+    line-height: 16px;
+    font-weight: bold;
+    color: #fff;
+    font-family: arial;
+    margin: 0 auto;
+}
+
+.missTable th .sort, .misstable th .up, .misstable th .down {
+    cursor: pointer;
+    background: #f0e5c7 url(/static/images/sort.gif) no-repeat;
+}
+
+.missTable th .sort {
+    background-position: center center;
+}
+
+.missTable th .up {
+    background-position: center 3px;
+}
+
+.missTable th .down {
+    background-position: center -47px;
+}
+
+.missTable th i {
+    width: 9px;
+    height: 15px;
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    z-index: 111;
+}
+
+.bg-white {
+    background-color: white;
+}
